@@ -65,7 +65,7 @@ class SnakePlayer:
         final_move[move] = 1
         return final_move
 
-    def play_game(self, speed=10):
+    def play_game(self, speed=1):
         """
         Play a single game using the trained model
         Args:
@@ -89,7 +89,7 @@ class SnakePlayer:
 
 def main():
     # Create player instance
-    player = SnakePlayer(model_path="./model/model_134.pth")
+    player = SnakePlayer(model_path="./model/model_600_epochs.pth")
     
     # Play games until user quits
     while True:
@@ -97,9 +97,10 @@ def main():
         print(f'Game Over! Score: {score}')
         
         # Ask if user wants to play again
-        play_again = input("Play again? (y/n): ")
-        if play_again.lower() != 'y':
-            break
+        # play_again = input("Play again? (y/n): ")
+        # play_again = "y"
+        # if play_again.lower() != 'y':
+        #     break
         player.game.reset()
 
 if __name__ == '__main__':
