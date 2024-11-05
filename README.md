@@ -87,14 +87,13 @@ The state is represented by a vector capturing information about:
 ### Rewards
 - **+10** for eating food.
 - **-10** for colliding with the wall or itself.
-- **-0.1** for each time step to encourage shorter paths to food.
+- **0** normal move.
 
 ### Action Space
 The possible actions for the snake are:
 - Move **left**.
 - Move **right**.
-- Move **up**.
-- Move **down**.
+- Move **forward**.
 
 ## Training
 The training loop includes the following key steps:
