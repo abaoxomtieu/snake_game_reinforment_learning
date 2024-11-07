@@ -128,4 +128,5 @@ You can adjust the game and training parameters by modifying the following in th
 - **Grid size**: Customize the size of the game grid.
 - **Training hyperparameters**: Adjust the learning rate, discount factor, epsilon for exploration-exploitation balance, and the number of episodes.
 - **Neural network architecture**: Modify the layers in the Q-network to experiment with different architectures.
-
+## Reference:
+Repo: https://github.com/rajatdiptabiswas/snake-pygame.git
